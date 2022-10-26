@@ -1,0 +1,111 @@
+::ng-deep body {
+    overflow-y: scroll;
+}
+
+.title {
+    margin: 0px auto;
+    max-width: 600px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 30px;
+    order: 1;
+    color: white;
+    font-family: "futura_b", 'futura_r', 'Helvetica Neue', 'Helvetica', 'Arial', 'Avenir', 'Hiragino Sans', 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+}
+
+.content {
+    order: 2;
+}
+
+.secondText {
+    font-size: 12px;
+    margin-left: 200px;
+    color: #7d7575;
+}
+
+.contentTitle {
+    color: #dbdbdb;
+    margin-top: 100px;
+    font-size: 30px;
+    font-family: "futura_b", 'futura_r', 'Helvetica Neue', 'Helvetica', 'Arial', 'Avenir', 'Hiragino Sans', 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+}
+
+.projects {
+    margin: auto;
+    max-width: 800px;
+    padding: 0px;
+    margin-top: 50px;
+    background-color: transparent;
+    width: 1000px;
+    height: 350px;
+    z-index: 0;
+    display: grid;
+    grid-template: 2fr/repeat(3, 1fr);
+    grid-gap: 0.1rem;
+    grid-row-gap: 1rem;
+}
+
+.project {
+    max-width: 240px;
+    width: 240px;
+    height: 340px;
+    z-index: 1;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+/* projects style */
+
+.object-image {
+    width: 240px;
+    height: 230px;
+    border-radius: 5px;
+    border: 1px solid rgb(62, 62, 62);
+    object-fit: cover;
+}
+
+.objects {
+    max-width: 240px;
+    border-radius: 5px;
+    border: 1px solid rgb(62, 62, 62);
+    background-color: #151515;
+    font-size: 10px;
+    font-family: "futura_b", 'futura_r', 'Helvetica Neue', 'Helvetica', 'Arial', 'Avenir', 'Hiragino Sans', 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+}
+
+.object-text:nth-child(1) {
+    margin-top: 6px;
+    margin-left: 5px;
+    font-size: 15px;
+    color: #cccbcb;
+}
+
+.object-text:nth-child(2) {
+    font-family: 'Fira Code', monospace;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-left: 4px;
+    margin-bottom: 6px;
+    font-size: 10px;
+    color: #9a9696;
+}
+
+.object-text:nth-child(3) {
+    font-family: 'Fira Code', monospace;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-left: 4px;
+    margin-bottom: 6px;
+    font-size: 10px;
+    color: #9a9696;
+}
+
+@media (max-width: 860px) {
+    .projects {
+        display: block;
+        max-width: 240px;
+    }
+}

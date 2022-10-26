@@ -1,0 +1,36 @@
+.footer {
+    width: 100%;
+    position: absolute;
+    bottom: -1100px;
+    background-color: rgb(0, 0, 0);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons {
+    display: grid;
+    justify-content: center;
+    font-family: 'Fira Code', monospace;
+    grid-template: 2fr/repeat(2, 1fr);
+    grid-gap: 2rem;
+    grid-row-gap: 1rem;
+    width: 150px;
+    z-index: 2;
+}
+
+.link {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.75);
+    z-index: 2;
+    font-size: 12px;
+}
+
+.data {
+    color: rgba(255, 255, 255, 0.75);
+    position: absolute;
+    left: 100px;
+    font-family: 'Fira Code', monospace;
+    font-size: 5px;
+}

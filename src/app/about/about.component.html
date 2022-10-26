@@ -1,0 +1,101 @@
+<section class="upper-page">
+    <div class="page-top-left">
+        <div class="apresentation">
+            <div class="tit-top">
+                <h1 class="title-top">About <span style="color: #ff4d5a; margin-left: 7px;"> Me</span></h1>
+            </div>
+            <div class="frase">
+                <h1 class="h1-frase">"Persistence is the path to success."</h1>
+            </div>
+        </div>
+    </div>
+    <div class="page-top-right">
+
+        <div class="divImage">
+            <img src="assets/img/perfil.jpg" class="profileImg">
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+<div class="content" (mouseover)="animation()">
+    <div class="motiv-frase">
+        <h1 class="right-frase" [className]="active ? 'right-frase active' : 'right-frase'">You got all the Talent in the World, but are you obsessed?</h1>
+    </div>
+
+
+    <div class="animationContent" [className]="animationContent ? 'animationContent titActive' : 'animationContent'">
+
+        <section class="container">
+
+            <div class="information">
+                <div class="title">about me</div>
+
+                <div class="border"></div>
+                <div class="border"></div>
+
+                <div class="params-content">
+                    <div class="first-text">
+                        <h1 class="texts">//Front-end developer who loves create sites with freedom and expressing emotions on codes.</h1>
+                        <h1 class="texts">//Enthusiast in everything that involves technology and the like.</h1>
+                    </div>
+                    <br><span class="from">// From </span> <span class="brazil">Brazil🇧🇷</span>
+                </div>
+            </div>
+
+
+
+            <div class="second-text">
+                <h1 class="second-title">Core skills</h1>
+                <div class="skill-list">
+                    <ul class="core-list">
+                        <li>Software Development <br></li>
+                        <li>Leadership, Communication, Discipline <br></li>
+                        <li>Html, Css, JavaScript, Angular, GitHub <br></li>
+                        <li>Sony vegas <br></li>
+
+                    </ul>
+
+                    <h1 class="second-title">Also Studying</h1>
+                    <ul class="core-list">
+                        <li>to pass the ENEM exam</li>
+                        <li>Back-End Development, UI UX</li>
+                        <li>MySql, MongoDB, Jest, Java, C</li>
+                        <li>Photoshop</li>
+                    </ul>
+
+                    <h1 class="second-title">Languages</h1>
+                    <ul class="core-list">
+                        <li><span style="color: #682ae9; font-family: 'Fira Code', monospace;">// Fluency</span> <br> English, Portuguese</li>
+                        <li><span style="color: #682ae9; font-family: 'Fira Code', monospace;">// Basic</span> <br> Spanish</li>
+                    </ul>
+
+                    <h1 class="second-title">Obsessions</h1>
+                    <ul class="core-list">
+                        <li>Gym</li>
+                        <li>Volleyball</li>
+                        <li>Code</li>
+                        <li>Study</li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+
+
+    </div>
+
+</div>
+
+
+
+
+<router-outlet></router-outlet>

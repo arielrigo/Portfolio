@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Bebas+Neue&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Bebas+Neue&family=Fira+Code:wght@300&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Bebas+Neue&family=Fira+Code:wght@300&family=Montserrat:wght@100&family=Roboto&display=swap');
+.full {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+::ng-deep body {
+    overflow-y: scroll;
+}
+
+.tit-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-top {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 5rem;
+    width: 40rem;
+    margin: 0;
+}
+
+.page-top-left {
+    width: 50%;
+    height: 91%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 0;
+}
+
+.page-top-right {
+    width: 50%;
+    height: 91%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 0;
+}
+
+.apresentation {
+    font-family: 'Roboto', sans-serif;
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 50px;
+    margin-top: 100px;
+    /* position: absolute;
+    left: 120px;
+    top: 200px;
+    font-size: 20px; */
+}
+
+.divImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.profileImg {
+    max-height: 20rem;
+    max-width: 20rem;
+    border-radius: 5px;
+    box-shadow: 0px 0px 200px 10px rgba(255, 255, 255, 0.5);
+}
+
+.h1-frase {
+    color: white;
+    font-size: 15px;
+    margin-left: 200px;
+}
+
+.animationContent {
+    transform: scale(0);
+    font-family: 'Aboreto', cursive;
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    width: 100%;
+    margin-top: 70px;
+    margin-left: 100px;
+}
+
+.title {
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(234, 228, 228);
+    font-size: 35px;
+    letter-spacing: -1;
+    flex-wrap: wrap;
+}
+
+.border {
+    margin: 7px;
+    width: 88px;
+    height: 4px;
+    border-radius: 5px;
+    background: rgb(234, 228, 228);
+    margin-left: 90px;
+}
+
+.border:nth-child(3) {
+    margin: 7px;
+    width: 88px;
+    height: 4px;
+    border-radius: 5px;
+    background: rgb(234, 228, 228);
+    margin-left: 110px;
+}
+
+.motiv-frase {
+    display: flex;
+    flex-wrap: wrap;
+    overflow-wrap: break-word;
+}
+
+.right-frase {
+    flex-wrap: wrap;
+    overflow-wrap: break-word;
+    display: none;
+    font-family: 'Fira Code', monospace;
+    color: rgba(255, 255, 255, 0.75);
+    text-align: center;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    margin: 0 auto;
+    overflow: hidden;
+    border-right: 2px solid rgba(255, 255, 255, 0.75);
+}
+
+.course {
+    margin-top: 20px;
+    color: #7d7575;
+}
+
+.params {
+    color: #682ae9;
+}
+
+.lets {
+    font-size: 20px;
+    margin: 20px;
+}
+
+.params-content {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #7d7575;
+    letter-spacing: 2px;
+    display: block;
+}
+
+.first-text {
+    max-width: 600px;
+    line-height: 1;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.texts {
+    display: block;
+    flex-wrap: wrap;
+    overflow-wrap: break-word;
+}
+
+.brazil {
+    color: green;
+}
+
+.from {
+    color: #7d7575;
+}
+
+.content {
+    width: 100%;
+    position: absolute;
+    bottom: -1100px;
+    background-color: black;
+    height: 1100px;
+}
+
+.second-text {
+    margin-top: 30px;
+}
+
+.second-title {
+    font-size: 1.2rem;
+    margin-top: 50px;
+    color: #dbdbdb;
+}
+
+.core-list {
+    color: #7d7575;
+    margin-top: 20px;
+    list-style: none;
+    display: grid;
+    grid-template: 1fr/repeat(4, 1fr);
+    grid-gap: 2rem;
+    grid-row-gap: 1rem;
+}
+
+@keyframes blinkCursor {
+    from {
+        border-right-color: rgba(255, 255, 255, 0.75);
+    }
+    to {
+        border-right-color: transparent;
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 35em;
+    }
+}
+
+@keyframes title {
+    from {
+        display: none;
+    }
+    to {
+        display: block;
+    }
+}
+
+.active {
+    display: flex;
+    flex-wrap: wrap;
+    overflow-wrap: break-word;
+    margin-top: 50px;
+    animation: blinkCursor 500ms steps(50) infinite normal, typing 4s steps(40) 1s normal both
+}
+
+.titActive {
+    transform: scale(1);
+    transition: 3s;
+}
+
+@media (max-width: 937px) {
+    .core-list {
+        grid-template: 1fr/repeat(3, 1fr);
+        max-width: 700px;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 814px) {
+    .core-list {
+        grid-template: 1fr/repeat(2, 1fr);
+        max-width: 700px;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 772px) {
+    .core-list {
+        display: block;
+    }
+    li {
+        margin-top: 10px;
+    }
+    .content {
+        bottom: -1300px;
+        height: 1300px;
+    }
+    .container {
+        margin-left: 30px;
+    }
+    .params-content {
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 456px) {
+    .right-frase {
+        display: none;
+    }
+    .active {
+        display: none;
+    }
+    .first-text {
+        font-size: 0.8rem;
+        margin-left: 0px;
+    }
+    .params-content {
+        max-width: 280px;
+    }
+}
+
+@media (max-width: 839px) {
+    .divImage {
+        margin-top: 0px;
+    }
+    .profileImg {
+        width: 15rem;
+        height: 15rem;
+    }
+    .h1-frase {
+        display: none;
+    }
+    .page-top-left {
+        width: 100%;
+        height: 45%;
+        order: 1;
+        position: static;
+    }
+    .page-top-right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 45%;
+        order: 2;
+        position: static;
+    }
+    .upper-page {
+        width: 100%;
+        height: 90%;
+        display: block;
+        flex-wrap: wrap;
+        flex-direction: column
+    }
+    .apresentation {
+        margin-top: 0px;
+        padding: 20px;
+    }
+}
+
+@media(max-width: 428px) {
+    .divImage {
+        margin-bottom: 50px;
+    }
+    .title-top {
+        font-size: 3rem;
+    }
+}

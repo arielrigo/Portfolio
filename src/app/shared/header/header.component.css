@@ -1,0 +1,99 @@
+* {
+    height: 50px;
+}
+
+
+/* .header {
+    width: 100%;
+    border-bottom: 2px;
+    display: space;
+    align-items: center;
+    z-index: 3;
+    height: 50px;
+} */
+
+.logo {
+    margin-top: 5px;
+    margin-left: 20px;
+    width: 2rem;
+    display: block;
+    font-size: 37px;
+    z-index: 1;
+    color: white;
+    text-decoration: none;
+    font-family: 'futura_r', 'Helvetica Neue', 'Helvetica', 'Arial', 'Avenir', 'Hiragino Sans', 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+}
+
+.navBar {
+    width: 500px;
+    margin: auto;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    /* position: relative;
+    bottom: 0; */
+    /* right: -140px; */
+    /* top: -42px; */
+}
+
+.navBar ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 22px 20px;
+}
+
+.navBar ul li a {
+    text-decoration: none;
+    color: white;
+    transition: 0.5s ease-in-out;
+    font-family: 'futura_r', 'Helvetica Neue', 'Helvetica', 'Arial', 'Avenir', 'Hiragino Sans', 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+}
+
+.navBar ul li a:hover {
+    color: rgb(91, 87, 87);
+}
+
+.buttons {
+    display: flex;
+    align-items: baseline;
+    color: white;
+    /* position: absolute;
+    right: 50px;
+    top: 17px; */
+    display: flex;
+    justify-content: end;
+    margin-right: 20px;
+    z-index: 3;
+}
+
+.button {}
+
+.bi {
+    cursor: pointer;
+}
+
+.instagram {
+    margin-left: 20px;
+}
+
+.inactive {
+    margin-left: 20px;
+}
+
+.instaActive {
+    margin-left: 20px;
+    transition: 0.5s ease-in-out;
+}
+
+.instaActive:hover {
+    color: rgb(206, 32, 32);
+}
+
+.gitActive {
+    margin-left: 20px;
+    transition: 0.5s ease-in-out;
+}
+
+.gitActive:hover {
+    color: rgb(44, 44, 44);
+}
