@@ -1,7 +1,6 @@
-declare var require: any
+
 import { Component, OnInit } from '@angular/core';
 import { fakeAsync } from '@angular/core/testing';
-
 @Component({
   selector: 'app-main',
   templateUrl: './main.component.html',
@@ -18,7 +17,7 @@ export class MainComponent implements OnInit {
 
   
   ngOnInit(): void {
-  
+
     const Parallax = require('parallax-js');
     var scene = document.getElementById('scene');
     var parallaxInstance = new Parallax(scene);

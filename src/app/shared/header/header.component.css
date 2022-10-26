@@ -61,12 +61,10 @@
     right: 50px;
     top: 17px; */
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     margin-right: 20px;
     z-index: 3;
 }
-
-.button {}
 
 .bi {
     cursor: pointer;
