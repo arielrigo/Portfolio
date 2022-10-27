@@ -36,8 +36,8 @@ export class HeaderComponent implements OnInit {
    }
 
    leave(id: number) {
-    // this.gitActive = false
-    // this.instaActive = false
+     this.gitActive = false
+     this.instaActive = false
    }
 
   
