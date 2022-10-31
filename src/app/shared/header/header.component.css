@@ -1,112 +1,146 @@
-* {
-    height: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 3;
-    margin: 0;
-    padding: 0;
-}
-
-
-/* .header {
-    width: 100%;
-    border-bottom: 2px;
-    display: space;
-    align-items: center;
-    z-index: 3;
-    height: 50px;
-} */
-
-.logo {
-    margin-top: 5px;
-    margin-left: 20px;
-    width: 2rem;
-    display: block;
-    font-size: 37px;
-    z-index: 1;
-    color: white;
-    text-decoration: none;
-    font-family: 'futura_r', 'Helvetica Neue', 'Helvetica', 'Arial', 'Avenir', 'Hiragino Sans', 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
-}
-
-.navBar {
-    margin-top: 10px;
-    width: 470px;
-    margin: 0 auto;
-    z-index: 3;
-    display: flex;
-    justify-content: center;
-    /* position: relative;
-    bottom: 0; */
-    /* right: -140px; */
-    /* top: -42px; */
-}
-
-.navBar ul li {
-    margin-top: 10px;
-    list-style-type: none;
-    display: inline-block;
-    margin-left: 40px;
-}
-
-.navBar ul li a {
-    text-decoration: none;
-    color: white;
-    transition: 0.5s ease-in-out;
-    font-family: 'futura_r', 'Helvetica Neue', 'Helvetica', 'Arial', 'Avenir', 'Hiragino Sans', 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
-}
-
-.navBar ul li a:hover {
-    color: rgb(91, 87, 87);
-}
-
-.buttons {
-    display: flex;
-    align-items: baseline;
-    color: white;
-    justify-content: flex-end;
-    margin-right: 50px;
-    z-index: 3;
-    margin-bottom: 10px;
-}
-
-.button {
-    color: rgb(217, 214, 214);
-    margin-left: 50px;
-    width: 1px;
-}
-
-.bi {
-    cursor: pointer;
-    width: 22px;
-    height: 22px;
-}
-
-.instagram {
-    margin-left: 20px;
-}
-
-.inactive {
-    color: rgb(217, 214, 214);
-    margin-left: 20px;
-    transition: 0.5s ease-in-out;
-}
-
-.instaActive {
-    margin-left: 20px;
-    transition: 0.5s ease-in-out;
-}
-
-.instaActive:hover {
-    color: rgb(206, 32, 32);
-}
-
-.gitActive {
-    margin-left: 20px;
-    transition: 0.5s ease-in-out;
-}
-
-.gitActive:hover {
-    color: rgb(44, 44, 44);
-}
+   .header {
+       width: 100%;
+       height: 40px;
+       display: grid;
+       grid-template: 2fr/repeat(3, 1fr);
+   }
+   
+   .logo {
+       margin-right: 0px;
+       margin-left: 5px;
+       width: 2rem;
+       display: block;
+       font-size: 37px;
+       z-index: 1;
+       color: white;
+       text-decoration: none;
+       font-family: 'futura_r', 'Helvetica Neue', 'Helvetica', 'Arial', 'Avenir', 'Hiragino Sans', 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+   }
+   
+   .navBar {
+       display: flex;
+       width: 18rem;
+       justify-content: center;
+       margin: auto;
+       z-index: 3;
+   }
+   
+   .navBar ul li {
+       list-style-type: none;
+       display: inline-block;
+       margin-left: 40px;
+   }
+   
+   .navBar ul li a {
+       text-decoration: none;
+       color: white;
+       transition: 0.5s ease-in-out;
+       font-family: 'futura_r', 'Helvetica Neue', 'Helvetica', 'Arial', 'Avenir', 'Hiragino Sans', 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+   }
+   
+   .navBar ul li a:hover {
+       color: rgb(91, 87, 87);
+   }
+   
+   .buttons {
+       display: flex;
+       align-items: baseline;
+       color: white;
+       justify-content: flex-end;
+       padding: 10px;
+       margin: 0;
+       margin-top: 2.5px;
+       z-index: 3;
+   }
+   
+   .button {
+       color: rgb(217, 214, 214);
+       /* margin-left: 50px; */
+       /* width: 1px; */
+   }
+   
+   .bi {
+       cursor: pointer;
+       width: 22px;
+       height: 22px;
+   }
+   
+   .instagram {
+       margin-left: 20px;
+   }
+   
+   .inactive {
+       color: rgb(217, 214, 214);
+       margin-left: 20px;
+       transition: 0.5s ease-in-out;
+   }
+   
+   .instaActive {
+       margin-left: 20px;
+       transition: 0.5s ease-in-out;
+   }
+   
+   .instaActive:hover {
+       color: rgb(206, 32, 32);
+   }
+   
+   .gitActive {
+       margin-left: 20px;
+       transition: 0.5s ease-in-out;
+   }
+   
+   .gitActive:hover {
+       color: rgb(44, 44, 44);
+   }
+   
+   @media (max-width: 617px) {
+       .navBar {
+           display: none;
+       }
+       .mobileNav {
+           padding-top: 8px;
+           width: 30px;
+           height: 25px;
+           display: block;
+           justify-content: center;
+           margin: auto;
+           flex-direction: column;
+           flex-wrap: wrap;
+       }
+       .Mspan {
+           transition: .3s;
+           transform: rotate(135deg);
+           width: 20px;
+           height: 3px;
+           display: flex;
+           justify-content: center;
+           margin: auto;
+           flex-direction: column;
+           background-color: rgb(255, 255, 255);
+           width: 30px;
+       }
+       .Mspan:nth-child(2) {
+           transform: rotate(-135deg);
+           content: '';
+           display: flex;
+           justify-content: center;
+           margin: auto;
+           flex-direction: column;
+           width: 30px;
+           height: 3px;
+           background-color: rgb(255, 255, 255);
+           position: relative;
+           top: -2.5px;
+       }
+       .logo {
+           margin-top: 0px;
+           margin-bottom: 5px;
+           margin-left: 5px;
+       }
+   }
+   
+   @media (min-width: 617px) {
+       .mobileNav {
+           display: none;
+       }
+   }
