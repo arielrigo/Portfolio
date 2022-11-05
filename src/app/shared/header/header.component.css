@@ -98,6 +98,7 @@
            display: none;
        }
        .mobileNav {
+           z-index: 5;
            padding-top: 8px;
            width: 30px;
            height: 25px;
@@ -109,7 +110,6 @@
        }
        .Mspan {
            transition: .3s;
-           transform: rotate(135deg);
            width: 20px;
            height: 3px;
            display: flex;
@@ -120,17 +120,41 @@
            width: 30px;
        }
        .Mspan:nth-child(2) {
-           transform: rotate(-135deg);
            content: '';
            display: flex;
            justify-content: center;
-           margin: auto;
+           margin-top: 5px;
            flex-direction: column;
            width: 30px;
-           height: 3px;
+           height: 2.7px;
            background-color: rgb(255, 255, 255);
+       }
+       .Mlist {
+           display: none;
+           margin-top: 20px;
+           z-index: 5;
+       }
+       .Mlist li a {
+           z-index: 5;
+           text-decoration: none;
+           color: white;
+           transition: 0.5s ease-in-out;
+           font-family: 'futura_r', 'Helvetica Neue', 'Helvetica', 'Arial', 'Avenir', 'Hiragino Sans', 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+       }
+       .Mlist li {
+           z-index: 5;
+           list-style-type: none;
+       }
+       .activated {
+           transform: rotate(135deg);
+       }
+       .activatedF {
+           transform: rotate(-135deg);
            position: relative;
-           top: -2.5px;
+           top: -6.2px;
+       }
+       .activatedL {
+           display: block;
        }
        .logo {
            margin-top: 0px;

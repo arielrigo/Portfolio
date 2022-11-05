@@ -14,6 +14,7 @@ export class HeaderComponent implements OnInit {
    }
    gitActive = false
    instaActive = false
+   mobileActive = false
    
   selectedButton = -1;
 
@@ -35,6 +36,18 @@ export class HeaderComponent implements OnInit {
 
    }
 
+   activated() {
+    this.mobileActive = true
+
+
+    if (this.mobileActive == true) {
+      document.querySelector(".Mspan").classList.remove("activated")
+      document.querySelector(".activatedF").classList.remove("activatedF")
+      this.mobileActive = false
+    }
+   }
+   
+
    leave(id: number) {
      this.gitActive = false
      this.instaActive = false
@@ -49,5 +62,7 @@ export class HeaderComponent implements OnInit {
   refresh() {
     location.reload()
   }
+
+  
  
 }
