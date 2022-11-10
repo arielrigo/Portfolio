@@ -9,6 +9,7 @@ import { HeaderComponent } from './shared/header/header.component';
 import { IonicModule } from '@ionic/angular';
 import { AboutComponent } from './about/about.component';
 import { ProjectsComponent } from './projectsComponent/projects.component';
+import { MoonComponent } from './main/moon/moon.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ProjectsComponent } from './projectsComponent/projects.component';
     FooterComponent,
     HeaderComponent,
     AboutComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    MoonComponent
   ],
   imports: [
     BrowserModule,

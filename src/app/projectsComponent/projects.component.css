@@ -3,12 +3,12 @@
 }
 
 .title {
-    margin: 0px auto;
+    margin: auto;
     max-width: 600px;
     padding: 0px;
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 50px;
     font-size: 30px;
     order: 1;
     color: white;
@@ -16,7 +16,7 @@
 }
 
 .content {
-    order: 2;
+    margin: 10px;
 }
 
 .secondText {
@@ -43,7 +43,7 @@
     z-index: 0;
     display: grid;
     grid-template: 2fr/repeat(3, 1fr);
-    grid-gap: 0.1rem;
+    grid-gap: 1rem;
     grid-row-gap: 1rem;
 }
 
@@ -109,5 +109,9 @@
     .projects {
         display: block;
         max-width: 240px;
+        margin-top: 10px;
+    }
+    .project {
+        margin-top: 20px;
     }
 }
