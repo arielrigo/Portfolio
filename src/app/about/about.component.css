@@ -56,11 +56,37 @@
     font-size: 20px; */
 }
 
+.scroll {
+    position: absolute;
+    bottom: 50px;
+    writing-mode: vertical-rl;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.2rem;
+    font-size: 0.5rem;
+    line-height: 1;
+    margin-left: 20px;
+}
+
+.scroll::after {
+    content: '';
+    display: block;
+    width: 2px;
+    height: 50px;
+    background-color: white;
+    position: absolute;
+    bottom: -50px;
+    left: 3.5px;
+}
+
+.scroll h1 {
+    color: white;
+}
+
 .divImage {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 100px;
 }
 
 .profileImg {
@@ -335,7 +361,7 @@
         flex-direction: column
     }
     .apresentation {
-        margin-top: 0px;
+        margin-top: 50px;
         padding: 20px;
     }
 }
