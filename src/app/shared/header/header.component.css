@@ -133,21 +133,50 @@
            height: 2.7px;
            background-color: rgb(255, 255, 255);
        }
+       .line {
+           content: '';
+           display: block;
+           width: 110px;
+           height: 0.5px;
+           margin: 5px;
+           background-color: gray;
+           box-shadow: 2px black;
+       }
+       .Mobile {
+           width: 16px;
+           height: 16px;
+       }
        .Mlist {
+           background-color: rgba(255, 255, 255, 0.5);
            display: none;
            margin-top: 20px;
            z-index: 5;
+           width: 120px;
+           height: 90px;
+           position: absolute;
+           right: 10px;
+           border-radius: 3px;
+           transform: scale(0);
+           transition: transform 2s;
        }
        .Mlist li a {
+           margin: 5px;
+           font-size: 12px;
+           color: black;
            z-index: 5;
            text-decoration: none;
-           color: white;
            transition: 0.5s ease-in-out;
            font-family: 'futura_r', 'Helvetica Neue', 'Helvetica', 'Arial', 'Avenir', 'Hiragino Sans', 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
        }
        .Mlist li {
+           /* margin-bottom: 12px; */
            z-index: 5;
            list-style-type: none;
+       }
+       .Mlist li a svg {
+           position: absolute;
+           right: 5px;
+           margin-top: 2px;
        }
        .activated {
            transform: rotate(135deg);
@@ -158,7 +187,8 @@
            top: -6.2px;
        }
        .activatedL {
-           display: block;
+           display: inline-block;
+           transform: scale(1);
        }
        .logo {
            margin-top: 0px;

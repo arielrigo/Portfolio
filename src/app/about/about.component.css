@@ -273,7 +273,7 @@
 
 .titActive {
     transform: scale(1);
-    transition: 3s;
+    transition: 1s;
 }
 
 @media (max-width: 937px) {
@@ -332,7 +332,6 @@
         margin-top: 0px;
     }
     .profileImg {
-        width: 15rem;
         height: 15rem;
     }
     .h1-frase {
