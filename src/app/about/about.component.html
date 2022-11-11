@@ -30,7 +30,12 @@
 
 
 
-<div class="content" (mouseover)="animation()">
+<div class="content" (mouseover)="animation()" (click)="mobileClick()">
+    <div class="mobile-motiv" [className]="mobileActive ? 'mobile-motiv Mactive' : ''">
+        <h1 class="mobile-right-frase">Maybe... click anywhere??</h1>
+    </div>
+
+
     <div class="motiv-frase">
         <h1 class="right-frase" [className]="active ? 'right-frase active' : 'right-frase'">You got all the Talent in the World, but are you obsessed?</h1>
     </div>

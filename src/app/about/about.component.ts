@@ -17,13 +17,16 @@ export class AboutComponent implements OnInit {
   activeYes = false
   active = false
   animationContent = false
+  mobileActive = false
+
+
   animation() {
      this.active = true
 
      if(window.screen.width <= 455) {
       setInterval(()=> {
         this.animationContent = true
-       }, 1100)
+       }, 200)
      }
 
      setInterval(()=> {
@@ -32,4 +35,9 @@ export class AboutComponent implements OnInit {
 
      
   }
+
+  mobileClick() {
+    this.mobileActive = true;
+  }
+  
 }

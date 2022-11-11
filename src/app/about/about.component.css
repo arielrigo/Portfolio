@@ -245,6 +245,15 @@
     }
 }
 
+@keyframes mobilePhrase {
+    from {
+        color: white;
+    }
+    to {
+        color: transparent;
+    }
+}
+
 @keyframes typing {
     from {
         width: 0;
@@ -273,7 +282,7 @@
 
 .titActive {
     transform: scale(1);
-    transition: 1s;
+    transition: 3s;
 }
 
 @media (max-width: 937px) {
@@ -311,7 +320,17 @@
     }
 }
 
-@media (max-width: 456px) {
+@media (max-width: 455px) {
+    .mobile-right-frase {
+        font-size: 12px;
+        letter-spacing: 0.2rem;
+        justify-content: center;
+        font-family: 'Fira Code', monospace;
+        display: flex;
+        color: white;
+        margin-top: 20px;
+        animation: mobilePhrase 1s infinite;
+    }
     .right-frase {
         display: none;
     }
@@ -324,6 +343,9 @@
     }
     .params-content {
         max-width: 280px;
+    }
+    .Mactive {
+        display: none;
     }
 }
 

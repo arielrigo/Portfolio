@@ -13,8 +13,8 @@
 
 
     <div class="buttons">
-        <div class="button" [ngClass]="{'active': selectedButton == 1}" (mouseover)="over(1)" (mouseleave)="leave(1)">
-            <a [className]="gitActive ? 'gitActive' : 'inactive'" id="1" href="https://github.com/arielrigo">
+        <div class="button">
+            <a [ngClass]="{'active': selectedButton == 1}" (mouseover)="over(1)" (mouseleave)="leave(1)" [className]="gitActive ? 'gitActive' : 'inactive'" id="1" href="https://github.com/arielrigo">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
                     <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
                 </svg>
@@ -22,8 +22,8 @@
         </div>
 
 
-        <div class="button" [ngClass]="{'active': selectedButton == 2}" (mouseover)="over(2)" (mouseleave)="leave(2)">
-            <a [className]="instaActive ? 'instaActive' : 'inactive' " id="2" href="https://www.instagram.com/arielr.z/">
+        <div class="button">
+            <a [ngClass]="{'active': selectedButton == 2}" (mouseover)="over(2)" (mouseleave)="leave(2)" [className]="instaActive ? 'instaActive' : 'inactive' " id="2" href="https://www.instagram.com/arielr.z/">
                 <svg xmlns="http://www.w3.org/2000/svg " fill="currentColor " class="bi bi-instagram" viewBox="0 0 16 16">
                                 <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923
                             1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173
